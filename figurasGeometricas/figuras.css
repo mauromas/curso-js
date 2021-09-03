@@ -1,0 +1,26 @@
+h1,
+p,
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input,
+button {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./figuras.css">
+    <title>Figuras Geométricas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Figuras Geométricas</h1>
+      <p>Calculadora: </p>
+    </header>
+
+    <section>
+      <h2>Calcula el área y perimetro de un cuadrado</h2>
+
+      <form >
+         <h3>Cuadrado:</h3>
+        <label for="InputCuadrado">
+          Escribe cuanto mide cada lado de tu cuadrado
+        </label>
+        <input class="input" id="InputCuadrado" type="number" />
+        <button type="button" onclick="calcPerimetroCuadrado()">
+          Calcula el Perímetro
+        </button>
+        <button type="button" onclick="calcAreaCuadradro()">
+          Calcula el área
+        </button>
+      </form>
+    </section>
+<hr>
+    <form>
+     <h3>Triangulo:</h3>
+        <label for="InputTrianguloLadoUno">
+          Escribe cuanto mide  lado 1 de tu triangulo
+        </label>
+        <input class="input" id="InputTrianguloLadoUno" type="number" />
+
+        
+
+        
+
+        <label for="InputTrianguloLadoDos">
+          Escribe cuanto mide lado 2 de tu triangulo
+        </label>
+        <input class="input" id="InputTrianguloLadoDos" type="number" />
+
+        <label for="InputTrianguloBase">
+          Escribe cuanto mide la base de tu triangulo
+        </label>
+        <input class="input" id="InputTrianguloBase" type="number" />
+        <button type="button" onclick="calcAlturaTriangulo()">
+          Calcula la altura
+        </button>
+        <div id="resultadoAltura"></div>
+      </form>
+    </section>
+
+    <script src="./figuras.js"></script>
+  </body>
+</html>
