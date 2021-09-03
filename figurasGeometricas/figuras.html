@@ -2,15 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./figuras.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./figuras.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <h1>Figuras Geométricas</h1>
-      <p>Calculadora: </p>
+
+      <nav>
+        <ul>
+          <a href="../index.html"><li>Inicio</li></a>
+          <a href="./figuras.html"><li>Geometria</li></a>
+          <a href="../descuentos/index.html"><li>Descuentos</li></a>
+          <a href="./salarios/index.html"><li>Salarios</li></a>
+        </ul>
+        <div class="hide">
+          <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+      </nav>
     </header>
 
     <section>
@@ -59,5 +75,12 @@
     </section>
 
     <script src="./figuras.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(".hide").on("click", function () {
+        $("nav ul").toggle("slow");
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TodoCálculo</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Práctica con JavaScript</h1>
+
+      <nav>
+        <ul>
+          <a href="./index.html"><li>Inicio</li></a>
+          <a href="./figurasGeometricas/figuras.html"><li>Geometria</li></a>
+          <a href="./descuentos/index.html"><li>Descuentos</li></a>
+          <a href="./salarios/index.html"><li>Salarios</li></a>
+        </ul>
+        <div class="hide">
+          <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h2>¡Aqui encontrarás las 3 prácticas realizadas con JavaScript!</h2>
+      <div class="flex-container">
+        <div class="taller taller__Uno">
+          <h2>Geométria</h2>
+          <p>Calaculadora de perímetros y áreas</p>
+          <img src="./images/geometria.png" alt="" />
+          <button class="centrar">
+            <a class="centrar" href="./figurasGeometricas/figuras.html"
+              >Ir a la página</a
+            >
+          </button>
+        </div>
+        <div class="taller taller__Dos">
+          <h2>Descuentos</h2>
+          <p>Cálculo tu precio final con el descuento aplicado...</p>
+          <img src="./images/descuentos.jpg" alt="" />
+          <button class="centrar">
+            <a class="centrar" href="./descuentos/index.html">Ir a la página</a>
+          </button>
+        </div>
+        <div class="taller taller__Tres">
+          <h2>Salarios</h2>
+          <p>Cálcula tu salario...</p>
+          <img src="./images/salarios.jpeg" alt="" />
+
+          <button class="centrar">
+            <a class="centrar" href="./salarios/index.html">Ir a la página</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p>Creada el 03/09/2021</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(".hide").on("click", function () {
+        $("nav ul").toggle("slow");
+      });
+    </script>
+  </body>
+</html>

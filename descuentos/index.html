@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Precios y Descuentos</title>
+
+    <header>
+      <h1>Descuentos</h1>
+      <nav>
+        <ul>
+          <a href="../index.html"><li>Inicio</li></a>
+          <a href="../figurasGeometricas/figuras.html"><li>Geometria</li></a>
+          <a href="./index.html"><li>Descuentos</li></a>
+          <a href="./salarios/index.html"><li>Salarios</li></a>
+        </ul>
+        <div class="hide">
+          <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+      </nav>
+    </header>
+
+    </header>
+
+    <form>
+      <h3>Calcula tu descuento:</h3>
+
+      <label for="ingresoPrecio">Ingresa el Precio:</label>
+      <input id="ingresoPrecio" type="number" />
+
+      <label for="ingresoDescuento">Ingresa el descuento</label>
+      <input id="ingresoDescuento" type="number" />
+
+      <button onclick="calcPrecioFinal()" type="button">
+        Calcular Descuento Aplicado
+      </button>
+
+      <p id="resultadoFinal"></p>
+    </form>
+
+    <script src="./index.js"></script>
+    <script>
+      $(".hide").on("click", function () {
+        $("nav ul").toggle("slow");
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
